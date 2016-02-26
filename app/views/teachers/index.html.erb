@@ -1,0 +1,29 @@
+<h2>Teachers on strike on the hill</h2>
+<div class="row">
+  <div class="col-md-8">
+    <table id="teachers" class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Faculty</th>
+        <th>From</th>
+      </tr>
+      </thead>
+      <%= render partial: 'teacher', collection: @teachers %>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <%= paginate @teachers %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <h3>Add more teachers to the strike!</h3>
+    <div id="entryform">
+      <%= render 'simple_form' %>
+    </div>
+  </div>
+</div>

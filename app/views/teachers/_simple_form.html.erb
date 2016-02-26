@@ -1,0 +1,6 @@
+<%= simple_form_for @teacher, remote: true do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.association :faculty %>
+    <%= f.button :submit %>
+<% end %>
